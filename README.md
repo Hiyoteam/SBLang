@@ -97,7 +97,7 @@ appendvar c d
 addkeep newline c
 out c
 ```
-输出:`What's your name?`
-输入:`小明`
-输出:`Hello,小明!`
+输出:`What's your name?`  
+输入:`小明`  
+输出:`Hello,小明!`  
 # 持续更新中，此文档可能不会匹配最新版本的SBLang...
