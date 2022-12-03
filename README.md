@@ -50,4 +50,54 @@ new a
 string a Hello world!
 addkeep newline a
 ```
+
+## appendvar
+### 简介
+将第二个变量的字符串与第一个变量拼接。
+### 用法
+`appendvar <变量1> <变量2>`
+### 示例
+```sblang
+new a,b
+string a foo
+string b bar
+appendvar a b
+```
+内存断点:`{"a":"foobar","b":"bar"}`
+
+## out
+### 简介
+将变量的内容输入到stdout.
+### 用法
+`out <变量名>`
+### 示例
+```sblang
+new a
+string a Hello,world!
+addkeep newline a
+out a
+```
+输出:`Hello,world!`
+
+## getchar
+### 简介
+从stdin获得输入，直到用户按下Enter，并将获得的内容写入变量。
+### 用法
+`getchar <变量名>`
+### 示例
+```sblang
+new a,b,c,d
+string a What's your name?
+out a
+getchar b
+string c Hello,
+string d !
+appendvar c b
+appendvar c d
+addkeep newline c
+out c
+```
+输出:`What's your name?`
+输入:`小明`
+输出:`Hello,小明!`
 # 持续更新中，此文档可能不会匹配最新版本的SBLang...
