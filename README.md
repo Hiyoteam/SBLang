@@ -113,7 +113,7 @@ out c
 ### 示例
 ```sblang
 define get
-new data
+d new data
 d out content
 d getchar data
 d end
