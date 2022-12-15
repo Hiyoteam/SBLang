@@ -102,4 +102,32 @@ out c
 输出:`What's your name?`  
 输入:`小明`  
 输出:`Hello,小明!`  
+
+## define/d
+### 简介
+定义函数。
+### 用法
+`define 函数名`
+`d 函数单行内容`
+`d end`
+### 示例
+```sblang
+define get
+new data
+d out content
+d getchar data
+d end
+new content,a
+string content 你叫什么名字：
+call get
+string a 你好，
+out a
+out data
+string a !
+addkeep newline a
+out a
+```
+输出：`你叫什么名字：`
+输入：`John Doe`
+输出：`你好，John Doe!`
 **持续更新中，此文档可能不会匹配最新版本的SBLang...**
